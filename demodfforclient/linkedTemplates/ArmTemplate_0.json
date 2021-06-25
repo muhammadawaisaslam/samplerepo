@@ -77,7 +77,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "DemoFile",
+						"fileName": "DemoFile2.csv",
 						"container": "monsterfiles"
 					},
 					"columnDelimiter": ",",
