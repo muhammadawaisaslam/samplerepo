@@ -1,0 +1,9 @@
+{
+	"name": "demodfforclient",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c80938cd-bdce-4b84-8321-dfa37b30f375",
+		"tenantId": "e7e6256a-7f45-4c36-b602-d90f8b7e3a92"
+	}
+}
