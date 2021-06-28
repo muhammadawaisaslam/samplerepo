@@ -154,7 +154,13 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable_address",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"sourceTableName": {
+								"value": "@variables('udv_sourceTableName')",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -175,6 +181,10 @@
 			"udv_destinationFileName": {
 				"type": "String",
 				"defaultValue": "Address.csv"
+			},
+			"udv_sourceTableName": {
+				"type": "String",
+				"defaultValue": "Address"
 			}
 		},
 		"annotations": []
