@@ -5,12 +5,6 @@
 			"referenceName": "ADLGen2_ls",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"destinationFileName": {
-				"type": "string",
-				"defaultValue": "customers.csv"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
