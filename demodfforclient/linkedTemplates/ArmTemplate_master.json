@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "demodfforclient"
 		},
+		"ADLGen2_ls_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLGen2_ls'"
+		},
+		"AdventureWorks_ls_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AdventureWorks_ls'"
+		},
 		"AzureBlobStorage1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
@@ -15,21 +23,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'CoreHR'"
 		},
-		"AdventureWorks_ls_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AdventureWorks_ls'"
-		},
-		"ADLGen2_ls_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ADLGen2_ls'"
+		"ADLGen2_ls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://monsteradl.dfs.core.windows.net"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://demokvforclient.vault.azure.net/"
-		},
-		"ADLGen2_ls_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://monsteradl.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -58,23 +58,23 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ADLGen2_ls_accountKey": {
+						"value": "[parameters('ADLGen2_ls_accountKey')]"
+					},
+					"AdventureWorks_ls_connectionString": {
+						"value": "[parameters('AdventureWorks_ls_connectionString')]"
+					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
 					"CoreHR_connectionString": {
 						"value": "[parameters('CoreHR_connectionString')]"
 					},
-					"AdventureWorks_ls_connectionString": {
-						"value": "[parameters('AdventureWorks_ls_connectionString')]"
-					},
-					"ADLGen2_ls_accountKey": {
-						"value": "[parameters('ADLGen2_ls_accountKey')]"
+					"ADLGen2_ls_properties_typeProperties_url": {
+						"value": "[parameters('ADLGen2_ls_properties_typeProperties_url')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
-					},
-					"ADLGen2_ls_properties_typeProperties_url": {
-						"value": "[parameters('ADLGen2_ls_properties_typeProperties_url')]"
 					}
 				}
 			},

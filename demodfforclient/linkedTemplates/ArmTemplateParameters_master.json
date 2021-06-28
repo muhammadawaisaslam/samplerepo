@@ -5,23 +5,23 @@
 		"factoryName": {
 			"value": "demodfforclient"
 		},
+		"ADLGen2_ls_accountKey": {
+			"value": ""
+		},
+		"AdventureWorks_ls_connectionString": {
+			"value": ""
+		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"CoreHR_connectionString": {
 			"value": ""
 		},
-		"AdventureWorks_ls_connectionString": {
-			"value": ""
-		},
-		"ADLGen2_ls_accountKey": {
-			"value": ""
+		"ADLGen2_ls_properties_typeProperties_url": {
+			"value": "https://monsteradl.dfs.core.windows.net"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://demokvforclient.vault.azure.net/"
-		},
-		"ADLGen2_ls_properties_typeProperties_url": {
-			"value": "https://monsteradl.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"value": ""
