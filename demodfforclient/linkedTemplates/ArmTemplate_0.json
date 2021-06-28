@@ -346,11 +346,21 @@
 					"referenceName": "ADLGen2_ls",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"destinationFileName": {
+						"type": "string",
+						"defaultValue": "Address.csv"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": {
+							"value": "@dataset().destinationFileName",
+							"type": "Expression"
+						},
 						"folderPath": "AdventureWorksData",
 						"fileSystem": "monsterfiles"
 					},
@@ -929,11 +939,22 @@
 							{
 								"referenceName": "addressCSVfiles",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"destinationFileName": {
+										"value": "@variables('udv_destinationFileName')",
+										"type": "Expression"
+									}
+								}
 							}
 						]
 					}
 				],
+				"variables": {
+					"udv_destinationFileName": {
+						"type": "String",
+						"defaultValue": "Address.csv"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
