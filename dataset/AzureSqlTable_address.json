@@ -5,6 +5,12 @@
 			"referenceName": "AdventureWorks_ls",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sourceTableName": {
+				"type": "string",
+				"defaultValue": "Address"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
@@ -50,7 +56,10 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Address"
+			"table": {
+				"value": "@dataset().sourceTableName",
+				"type": "Expression"
+			}
 		}
 	}
 }
