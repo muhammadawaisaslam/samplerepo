@@ -233,10 +233,7 @@
 				"outputs": [
 					{
 						"referenceName": "customers",
-						"type": "DatasetReference",
-						"parameters": {
-							"destinationFileName": "customers.csv"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
