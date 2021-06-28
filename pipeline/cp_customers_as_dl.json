@@ -14,7 +14,17 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					null,
+					{
+						"name": "Source",
+						"value": "SalesLT.Customer"
+					},
+					{
+						"name": "Destination",
+						"value": "monsterfiles/AdventureWorksData/@{'<destinationFileName>'}"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
