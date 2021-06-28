@@ -160,11 +160,23 @@
 				"outputs": [
 					{
 						"referenceName": "addressCSVfiles",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"destinationFileName": {
+								"value": "@variables('udv_destinationFileName')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"variables": {
+			"udv_destinationFileName": {
+				"type": "String",
+				"defaultValue": "Address.csv"
+			}
+		},
 		"annotations": []
 	}
 }
