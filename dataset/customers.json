@@ -8,7 +8,7 @@
 		"parameters": {
 			"destinationFileName": {
 				"type": "string",
-				"defaultValue": "customers"
+				"defaultValue": "customers.csv"
 			}
 		},
 		"annotations": [],

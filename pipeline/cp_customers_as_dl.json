@@ -14,16 +14,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "destinationFileName",
-						"value": "customers"
-					},
-					{
-						"name": "sourceName",
-						"value": "customers"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
