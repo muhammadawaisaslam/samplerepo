@@ -11,8 +11,17 @@
 		"CoreHR_connectionString": {
 			"value": ""
 		},
+		"AdventureWorks_ls_connectionString": {
+			"value": ""
+		},
+		"ADLGen2_ls_accountKey": {
+			"value": ""
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://demokvforclient.vault.azure.net/"
+		},
+		"ADLGen2_ls_properties_typeProperties_url": {
+			"value": "https://monsteradl.dfs.core.windows.net"
 		}
 	}
 }

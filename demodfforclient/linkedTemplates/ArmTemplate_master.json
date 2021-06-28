@@ -15,9 +15,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'CoreHR'"
 		},
+		"AdventureWorks_ls_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AdventureWorks_ls'"
+		},
+		"ADLGen2_ls_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLGen2_ls'"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://demokvforclient.vault.azure.net/"
+		},
+		"ADLGen2_ls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://monsteradl.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -52,8 +64,17 @@
 					"CoreHR_connectionString": {
 						"value": "[parameters('CoreHR_connectionString')]"
 					},
+					"AdventureWorks_ls_connectionString": {
+						"value": "[parameters('AdventureWorks_ls_connectionString')]"
+					},
+					"ADLGen2_ls_accountKey": {
+						"value": "[parameters('ADLGen2_ls_accountKey')]"
+					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"ADLGen2_ls_properties_typeProperties_url": {
+						"value": "[parameters('ADLGen2_ls_properties_typeProperties_url')]"
 					}
 				}
 			},
