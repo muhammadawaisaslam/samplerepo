@@ -15,7 +15,9 @@
 					"secureInput": false
 				},
 				"userProperties": [
-					null,
+					{
+						"value": ""
+					},
 					{
 						"name": "Source",
 						"value": "SalesLT.Customer"
