@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlQuery",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AdventureWorks_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
