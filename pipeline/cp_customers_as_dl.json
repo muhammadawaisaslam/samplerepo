@@ -14,19 +14,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"value": ""
-					},
-					{
-						"name": "Source",
-						"value": "SalesLT.Customer"
-					},
-					{
-						"name": "Destination",
-						"value": "monsterfiles/AdventureWorksData/@{'<destinationFileName>'}"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
@@ -245,11 +233,29 @@
 				"outputs": [
 					{
 						"referenceName": "customers",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName": {
+								"value": "@variables('file')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"destinationFileName": {
+				"type": "string",
+				"defaultValue": "customers.csv"
+			}
+		},
+		"variables": {
+			"file": {
+				"type": "String",
+				"defaultValue": "Customers.csv"
+			}
+		},
 		"annotations": []
 	}
 }
