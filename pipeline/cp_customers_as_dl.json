@@ -14,7 +14,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "destinationFileName",
+						"value": "customers"
+					},
+					{
+						"name": "sourceName",
+						"value": "customers"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
@@ -233,7 +242,10 @@
 				"outputs": [
 					{
 						"referenceName": "customers",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"destinationFileName": "customers.csv"
+						}
 					}
 				]
 			}
